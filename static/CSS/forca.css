@@ -1,0 +1,103 @@
+/* Estilo para o fundo da página */
+body {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    transition: background 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo dos títulos */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Estilo dos parágrafos */
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Estilo da área do jogo */
+#jogo {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Efeitos para o jogo ao vencer */
+#jogo.vitoria {
+    animation: bounce 0.5s forwards;
+}
+
+/* Animação de "bounce" */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Estilo do botão com efeito 3D */
+.btn {
+    position: relative;
+    border: none;
+    box-shadow: none;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo do rodapé */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Estilo geral do layout para centralizar o conteúdo */
+.container {
+    padding: 20px;
+}
+
+/* Estilo para letras já tentadas */
+#attempts {
+    font-weight: bold;
+    color: #d35400;
+}
+
+/* Estilo do status do jogo */
+#status {
+    font-weight: bold;
+    font-size: 1.2em;
+}

@@ -1,0 +1,120 @@
+body {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    transition: background 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo dos títulos */
+h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Estilo dos parágrafos */
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Estilo do botão com efeito 3D */
+.btn-12 {
+    position: relative;
+    border: none;
+    box-shadow: none;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    perspective: 230px;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-12 span {
+    background: rgb(0,172,238);
+    background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                7px 7px 20px 0px rgba(0,0,0,.1),
+                4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+.btn-12 span:nth-child(1) {
+    box-shadow: -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001;
+    transform: rotateX(90deg);
+    transform-origin: 50% 50% -20px;
+}
+
+.btn-12 span:nth-child(2) {
+    transform: rotateX(0deg);
+    transform-origin: 50% 50% -20px;
+}
+
+.btn-12:hover span:nth-child(1) {
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                7px 7px 20px 0px rgba(0,0,0,.1),
+                4px 4px 5px 0px rgba(0,0,0,.1);
+    transform: rotateX(0deg);
+}
+
+.btn-12:hover span:nth-child(2) {
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                7px 7px 20px 0px rgba(0,0,0,.1),
+                4px 4px 5px 0px rgba(0,0,0,.1);
+    color: transparent;
+    transform: rotateX(-90deg);
+}
+
+/* Estilo do rodapé */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Estilo da área do conteúdo */
+.container {
+    padding: 20px;
+}
+
+/* Estilo geral do layout para centralizar o conteúdo */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
